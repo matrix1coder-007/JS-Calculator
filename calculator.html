@@ -1,0 +1,60 @@
+<!-- // calculator -->
+<!DOCTYPE html>
+<html lang="en">
+ 
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./calculator.css">        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cal-Curator</title>
+    </head>
+ 
+    <body>
+        <div id="header">
+           || Cal -- Curator ||
+        </div>
+
+        <div id="card-calc">
+            <div style="flex: 60%">
+                <label id="label">Number: &nbsp;</label>
+                <input id="num1" class="nums"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <label id="label">Number: &nbsp;</label>
+                <input id="num2" class="nums"> <br><br><br>
+    
+                <!-- // operational-buttons section -->
+                <button id="button-operations" onclick="addNums()">+</button> &nbsp; &nbsp;
+                <button id="button-operations" onclick="subtractNums()">-</button> &nbsp; &nbsp;
+                <button id="button-operations" onclick="multiplyNums()">x</button> &nbsp; &nbsp;
+                <button id="button-operations" onclick="divideNums()">/</button> &nbsp; &nbsp;
+                <button id="button-operations" onclick="moduloRemainderNums()">mod</button> &nbsp; &nbsp;
+                <button id="button-operations" onclick="percentageNums()">%</button> &nbsp; &nbsp;
+                <button id="button-operations" onclick="underRootNums()">&radic;</button> &nbsp; &nbsp;
+                <button id="button-operations" onclick="clearNums()">&#x8; clear</button> 
+                <br><br>
+
+                <!-- // answer section -->
+                <div id="button-clicked">
+                    <label id="label">Result: <span id="result"></span></label>
+                </div>
+                <div id="button-clicked-error">
+                    <p>Please &nbsp; enter &nbsp; correct &nbsp; input &nbsp; values.. &nbsp; :))</p>
+                </div>
+                <br>
+                
+                <!-- // result section -->
+                <button onclick="displayRefresh()" id="button">Refresh </button>
+                <br>
+                <br>
+
+            </div>
+
+            <div style="flex: 40%; margin-left: 60%;">
+                <img src="./assets/owl.png" width="80%" onclick="speakProcedure()">
+            </div>
+        </div>
+        <div id="footer">
+            &nbsp; &nbsp; (c) &nbsp; IK &nbsp; TechServe &nbsp; 2023
+         </div>
+    </body>
+    <script src="./calculator.js"></script> 
+</html>
